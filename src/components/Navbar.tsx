@@ -11,7 +11,7 @@ import {
     XMarkIcon,
 } from '@heroicons/react/24/outline'
 import Image from 'next/image'
-import logo from '../images/logo.png'
+import logo from '../images/sign.png'
 
 
 export default function Navbar() {
@@ -25,10 +25,10 @@ export default function Navbar() {
                         <span className="sr-only">Your Company</span>
                         <Image
                             alt=""
-                            width={800}
-                            height={500}
+                            width={1800}
+                            height={1500}
                             src={logo}
-                            className="h-8 w-auto"
+                            className="h-8 w-full"
                         />
                     </a>
                 </div>

@@ -15,7 +15,7 @@ import graphql from '../images/graphql.png'
 import typescript from '../images/typescript.png'
 import jira from '../images/jira.png'
 import vscode from '../images/vscode.png'
-import github from '../images/github.svg'
+import github from '../images/github.png'
 import sql from '../images/sql.png'
 import fastapi from '../images/fastapi.svg'
 
@@ -130,7 +130,7 @@ export default function Skills() {
                 src={tailwind}
                 width={158}
                 height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 p-2"
               />
               <h4 className='mt-2'>Tailwind</h4>
             </div>
