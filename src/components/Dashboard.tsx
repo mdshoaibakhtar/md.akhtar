@@ -1,23 +1,25 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import myImage from '../images/my-image.jpg'
+import {PresentationChartLineIcon } from '@heroicons/react/24/solid'
+import { HandThumbUpIcon } from '@heroicons/react/20/solid'
+import { CodeBracketSquareIcon } from '@heroicons/react/16/solid'
 
 const features = [
     {
         name: 'Currently,',
         description:
             'I am thriving as a Software Engineer at Cloudkaptan in Kolkata, where I specialize in cutting-edge development frameworks like ReactJS, Next.js, Django REST Framework, Node.js, GraphQL, Tailwind, and FastAPI.',
-        icon: CloudArrowUpIcon,
+        icon: PresentationChartLineIcon,
     },
     {
         name: 'I have hands-on',
         description: ' experience with state management using Redux Toolkit, building intuitive UIs with Material-UI (MUI), and creating dynamic workflows using React Flow',
-        icon: LockClosedIcon,
+        icon: HandThumbUpIcon,
     },
     {
         name: 'As a certified AWS Cloud',
         description: ' Practitioner, I’ve successfully harnessed the power of various AWS services including DynamoDB, Cognito, Lambda, Secret Manager, CloudWatch, API Gateway, AppSync, and RDS to architect scalable and robust solutions.',
-        icon: ServerIcon,
+        icon: CodeBracketSquareIcon,
     },
 ]
 
@@ -42,7 +44,7 @@ export default function Dashboard() {
                                             <feature.icon aria-hidden="true" className="absolute left-1 top-1 h-5 w-5 text-indigo-600" />
                                             {feature.name}
                                         </dt>{' '}
-                                        <dd className="inline">{feature.description}</dd>
+                                        <dd className="inline text-white">{feature.description}</dd>
                                     </div>
                                 ))}
                             </dl>
