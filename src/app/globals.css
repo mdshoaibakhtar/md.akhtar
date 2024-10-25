@@ -25,3 +25,34 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.gradient{
+	background: linear-gradient(-45deg, #06051e, #1c0425, #150811, #260b2a);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+}
+.nav{
+  background: linear-gradient(-45deg, rgba(6, 5, 30, 0.6), rgba(28, 4, 37, 0.6), rgba(21, 8, 17, 0.6), rgba(38, 11, 42, 0.6));
+}
+
+.flip {
+  transition: transform 0.9s ease;
+}
+
+.flip:hover {
+  transform: scaleX(-1); /* Flips the image horizontally */
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

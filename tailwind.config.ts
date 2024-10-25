@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'white-transparent': 'rgba(255, 255, 255, 0.8)',
       },
     },
   },
