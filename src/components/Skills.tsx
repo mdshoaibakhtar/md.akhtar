@@ -227,7 +227,7 @@ export default function Skills() {
           <h2 className="text-center text-lg font-semibold leading-8 text-gray-200">
             Earned AWS badge
           </h2>
-        <div className="mx-auto mt-10 grid lg:flex sm:grid md:justify-around max-w-lg grid-cols-1 gap-x-12 sm:grid-cols-3 sm:items-center sm:gap-x-8 gap-y-10 sm:max-w-full sm:gap-x-10 lg:mx-0 lg:max-w-none">
+        <div className="mx-auto mt-10 grid lg:flex sm:grid md:justify-around max-w-64 sm:max-w-3xl grid-cols-1 gap-x-12 sm:grid-cols-3 sm:items-center sm:gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0 lg:max-w-none">
           <div className='w-full sm:w-full lg:w-[20%] bg-white rounded p-2 text-center cursor-pointer hover-effect'>
             <Image
               alt="Statamic"
