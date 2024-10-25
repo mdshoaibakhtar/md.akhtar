@@ -105,7 +105,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="w-full md:w-6/12 text-white md:text-end my-4 lg:my-0">
-                <p>© 2024 - Copyright and Designed by Md Shoaib Akhtar</p>
+                <p className="text-xs">© 2024 - Copyright and Designed by Md Shoaib Akhtar</p>
             </div>
         </div>
     )
