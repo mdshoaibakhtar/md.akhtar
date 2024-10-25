@@ -21,6 +21,8 @@ import fastapi from '../images/fastapi.svg'
 import practitionerbadge from '../images/practitionerbadge.png'
 import certifieddeveloper from '../images/certifieddeveloper.png'
 import accredition from '../images/accredition.png'
+import share from '../images/share.png'
+import locked from '../images/locked.png'
 
 
 export default function Skills() {
@@ -224,22 +226,33 @@ export default function Skills() {
         </div>
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-lg font-semibold leading-8 text-gray-200">
-            Earned AWS badge
-          </h2>
+        <h2 className="text-center text-lg font-semibold leading-8 text-gray-200">
+          Earned AWS badge
+        </h2>
         <div className="mx-auto mt-10 grid lg:flex sm:grid md:justify-around max-w-64 sm:max-w-3xl grid-cols-1 gap-x-12 sm:grid-cols-3 sm:items-center sm:gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0 lg:max-w-none">
-          <div className='w-full sm:w-full lg:w-[20%] bg-white rounded p-2 text-center cursor-pointer hover-effect'>
-            <Image
-              alt="Statamic"
-              src={practitionerbadge}
-              width={200}
-              height={70}
-              className="col-span-2 max-h-36 w-full object-contain lg:col-span-1"
-            />
-
-            <h4 className='mt-2 text-xs'>AWS Certified Cloud Practitioner</h4>
+          <div className='w-full sm:w-full lg:w-[20%] p-2 text-center'>
+            <div className='bg-white rounded p-2 text-center cursor-pointer hover-effect'>
+              <Image
+                alt="Statamic"
+                src={practitionerbadge}
+                width={200}
+                height={70}
+                className="col-span-2 max-h-36 w-full object-contain lg:col-span-1"
+              />
+              <h4 className='mt-2 text-xs'>AWS Certified Cloud Practitioner</h4>
+            </div>
+            <div className='mt-4 mx-auto items-center rounded-xl border-2 flex justify-center hover:bg-gray-900 transition cursor-pointer'>
+              <h3 className='text-white text-base max-w-full'>Show Credentials</h3>
+              <Image
+                alt="Statamic"
+                src={share}
+                width={200}
+                height={70}
+                className="col-span-2 max-h-5 max-w-5 w-full lg:col-span-1 ml-2"
+              />
+            </div>
           </div>
-          <div className='w-full sm:w-full lg:w-[20%] bg-white rounded p-2 text-center cursor-pointer hover-effect'>
+          {/* <div className='w-full sm:w-full lg:w-[20%] bg-white rounded p-2 text-center cursor-pointer hover-effect'>
             <Image
               alt="Statamic"
               src={accredition}
@@ -248,8 +261,30 @@ export default function Skills() {
               className="col-span-2 max-h-36 w-full object-contain lg:col-span-1"
             />
             <h4 className='mt-2 text-xs'>AWS Partner: Technical Accredited</h4>
+          </div> */}
+          <div className='w-full sm:w-full lg:w-[20%] p-2 text-center'>
+            <div className='bg-white rounded p-2 text-center cursor-pointer hover-effect'>
+              <Image
+                alt="Statamic"
+                src={accredition}
+                width={200}
+                height={70}
+                className="col-span-2 max-h-36 w-full object-contain lg:col-span-1"
+              />
+              <h4 className='mt-2 text-xs'>AWS Partner: Technical Accredited</h4>
+            </div>
+            <div className='mt-4 mx-auto items-center rounded-xl border-2 flex justify-center hover:bg-gray-900 transition cursor-pointer'>
+              <h3 className='text-white text-base max-w-full'>Show Credentials</h3>
+              <Image
+                alt="Statamic"
+                src={share}
+                width={200}
+                height={70}
+                className="col-span-2 max-h-5 max-w-5 w-full lg:col-span-1 ml-2"
+              />
+            </div>
           </div>
-          <div className='w-full sm:w-full lg:w-[20%] bg-white rounded p-2 text-center cursor-not-allowed'>
+          {/* <div className='w-full sm:w-full lg:w-[20%] bg-white rounded p-2 text-center cursor-not-allowed'>
             <Image
               alt="Statamic"
               src={certifieddeveloper}
@@ -258,6 +293,28 @@ export default function Skills() {
               className="col-span-2 max-h-36 w-full object-contain lg:col-span-1  filter: blur"
             />
             <h4 className='mt-2 text-xs'>AWS Certified Developer</h4>
+          </div> */}
+          <div className='w-full sm:w-full lg:w-[20%] p-2 text-center'>
+            <div className='bg-white rounded p-2 text-center cursor-not-allowed'>
+              <Image
+                alt="Statamic"
+                src={certifieddeveloper}
+                width={200}
+                height={70}
+                className="col-span-2 max-h-36 w-full object-contain lg:col-span-1 filter: blur"
+              />
+            <h4 className='mt-2 text-xs'>AWS Certified Developer</h4>
+            </div>
+            <div className='mt-4 mx-auto items-center rounded-xl border-2 flex justify-center hover:bg-gray-900 transition cursor-pointer'>
+              <h3 className='text-white text-base max-w-full'>Not Unlocked</h3>
+              <Image
+                alt="Statamic"
+                src={locked}
+                width={200}
+                height={70}
+                className="col-span-2 max-h-4 max-w-4 w-full lg:col-span-1 ml-2"
+              />
+            </div>
           </div>
         </div>
       </div>
