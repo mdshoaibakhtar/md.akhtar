@@ -9,24 +9,36 @@ export default function Experience() {
             <ol className="relative text-white border-s border-gray-200 dark:border-gray-700">
                 <li className="mb-10 ms-4 text-white">
                     <div className="text-white absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <time className="text-white mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">February 2022</time>
-                    <h3 className="text-white text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
-                    <p className="text-gray-200 mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
-                    <a href="#" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg className="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                    </svg></a>
+                    <h3 className="text-white text-lg font-semibold text-gray-900 dark:text-white">Software Engineer | Cloudkaptan</h3>
+                    <time className="text-white mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Kokata | September 2024 - Present</time>
+                    <ul className="list-disc ml-4">
+                        <li>Designed and implemented web applications using ReactJS, Django
+                            RESTFramework, Node.js, and FastAPI for development, increasing
+                            efficiency by 86% and ensuring seamless user experiences.</li>
+                        <li> Implemented various AWS services such as DynamoDB, Cognito,
+                            Elasticsearch, Lambda, Secret Manager, CloudWatch, and API Gateway
+                            to build scalable, secure, and high-performance applications, enhancing
+                            overall system reliability and user engagement by 77%.</li>
+                        <li> Engaged in continuous learning and solutions design, expanding skills to
+                            include Boomi Platform and additional AWS services, resulting in a 55%
+                            improvement in project delivery times</li>
+                        <li> Gained experience in professional ethics, collaboration by working with
+                            large teams and effectively coordinating with team members.</li>
+                    </ul>
                 </li>
                 <li className="mb-10 ms-4">
                     <div className="text-white absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <time className="text-white mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time>
-                    <h3 className="text-white text-lg font-semibold text-gray-900 dark:text-white">Marketing UI design in Figma</h3>
-                    <p className="text-white text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
-                </li>
-                <li className="ms-4">
-                    <div className="text-white absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <time className="text-white mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time>
-                    <h3 className="text-white text-lg font-semibold text-gray-900 dark:text-white">E-Commerce UI code in Tailwind CSS</h3>
-                    <p className="text-white text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+                    <h3 className="text-white text-lg font-semibold text-gray-900 dark:text-white">Software Engineer Intern | Aviram Technology</h3>
+                    <time className="text-white mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022 - August 2022 | Remote</time>
+                    <ul className="list-disc ml-4">
+                        <li>Analyzed requirements and engineered a web application using ReactJS
+                            and TypeScript, enhancing user interaction by 75%.</li>
+                        <li>Successfully interfaced with backend APIs, implementing efficient data
+                            retrieval and seamless display mechanisms to enhance user interaction.</li>
+                        <li> Delivered projects on time with 98% accuracy, enhancing team
+                            efficiency by 30% while gaining hands-on experience with
+                            industry-standard tools under high-pressure conditions.</li>
+                    </ul>
                 </li>
             </ol>
         </div>
