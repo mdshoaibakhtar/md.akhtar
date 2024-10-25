@@ -18,6 +18,9 @@ import vscode from '../images/vscode.png'
 import github from '../images/github.png'
 import sql from '../images/sql.png'
 import fastapi from '../images/fastapi.svg'
+import practitionerbadge from '../images/practitionerbadge.png'
+import certifieddeveloper from '../images/certifieddeveloper.png'
+import accredition from '../images/accredition.png'
 
 
 export default function Skills() {
@@ -50,7 +53,7 @@ export default function Skills() {
               <h4 className='mt-2'>CSS</h4>
             </div>
             <div className='w-full sm:w-full lg:w-[10%] bg-white rounded p-2 text-center cursor-pointer flip'>
-            
+
               <Image
                 alt="Tuple"
                 src={js}
@@ -220,7 +223,45 @@ export default function Skills() {
           </div>
         </div>
       </div>
-      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 className="text-center text-lg font-semibold leading-8 text-gray-200">
+            Earned AWS badge
+          </h2>
+        <div className="mx-auto mt-10 grid lg:flex sm:grid md:justify-around max-w-lg grid-cols-1 gap-x-12 sm:grid-cols-3 sm:items-center sm:gap-x-8 gap-y-10 sm:max-w-full sm:gap-x-10 lg:mx-0 lg:max-w-none">
+          <div className='w-full sm:w-full lg:w-[20%] bg-white rounded p-2 text-center cursor-pointer hover-effect'>
+            <Image
+              alt="Statamic"
+              src={practitionerbadge}
+              width={200}
+              height={70}
+              className="col-span-2 max-h-36 w-full object-contain lg:col-span-1"
+            />
+
+            <h4 className='mt-2 text-xs'>AWS Certified Cloud Practitioner</h4>
+          </div>
+          <div className='w-full sm:w-full lg:w-[20%] bg-white rounded p-2 text-center cursor-pointer hover-effect'>
+            <Image
+              alt="Statamic"
+              src={accredition}
+              width={158}
+              height={48}
+              className="col-span-2 max-h-36 w-full object-contain lg:col-span-1"
+            />
+            <h4 className='mt-2 text-xs'>AWS Partner: Technical Accredited</h4>
+          </div>
+          <div className='w-full sm:w-full lg:w-[20%] bg-white rounded p-2 text-center cursor-not-allowed'>
+            <Image
+              alt="Statamic"
+              src={certifieddeveloper}
+              width={158}
+              height={48}
+              className="col-span-2 max-h-36 w-full object-contain lg:col-span-1  filter: blur"
+            />
+            <h4 className='mt-2 text-xs'>AWS Certified Developer</h4>
+          </div>
+        </div>
+      </div>
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 mt-8">
         <h2 className="text-center text-base/7 font-semibold text-gray-100">Deploy faster</h2>
         <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-100 sm:text-5xl">
           Everything you need to deploy your app
