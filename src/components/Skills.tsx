@@ -23,15 +23,16 @@ import certifieddeveloper from '../images/certifieddeveloper.png'
 import accredition from '../images/accredition.png'
 import share from '../images/share.png'
 import locked from '../images/locked.png'
+import code from '../images/code.png'
+// import DeveloperProfile from './DeveloperProfile'
 
 
 export default function Skills() {
   return (
     <div className="py-12 sm:py-16">
-      <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-lg font-semibold leading-8 text-gray-200">
-            Technology and Tools I know
+            Technology and Tools
           </h2>
           <div className="mx-auto mt-10 grid lg:flex sm:grid md:justify-around max-w-lg grid-cols-2 gap-x-12 sm:grid-cols-4 sm:items-center sm:gap-x-8 gap-y-10 sm:max-w-full sm:gap-x-10 lg:mx-0 lg:max-w-none">
             <div className='w-full sm:w-full lg:w-[10%] bg-white rounded p-2 text-center cursor-pointer flip'>
@@ -224,10 +225,9 @@ export default function Skills() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16">
         <h2 className="text-center text-lg font-semibold leading-8 text-gray-200">
-          Earned AWS badge
+          AWS badges and Accredition
         </h2>
         <div className="mx-auto mt-10 grid lg:flex sm:grid md:justify-around max-w-64 sm:max-w-3xl grid-cols-1 gap-x-12 sm:grid-cols-3 sm:items-center sm:gap-x-8 gap-y-10 sm:gap-x-10 lg:mx-0 lg:max-w-none">
           <div className='w-full sm:w-full lg:w-[20%] p-2 text-center'>
@@ -319,9 +319,8 @@ export default function Skills() {
         </div>
       </div>
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 mt-8">
-        <h2 className="text-center text-base/7 font-semibold text-gray-100">Deploy faster</h2>
-        <p className="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-100 sm:text-5xl">
-          Everything you need to deploy your app
+        <p className="mx-auto mt-2 max-w-4xl text-xs text-center text-xl font-semibold tracking-tight text-gray-100 sm:text-xl">
+        Experienced web developer skilled in modern technologies and frameworks, with a proven track record of delivering high-performance, secure APIs. Built and optimized numerous robust APIs, ensuring scalability, reliability, and enhanced security for seamless user experiences 
         </p>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="relative lg:row-span-2">
@@ -332,8 +331,8 @@ export default function Skills() {
                   Mobile friendly
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-                </p>
+                Skilled in creating mobile-friendly, high-quality UI with ReactJS, NextJS, Tailwind, and modern frontend frameworks.
+                                </p>
               </div>
               <div className="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
                 <div className="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
@@ -357,7 +356,7 @@ export default function Skills() {
                   Performance
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.
+                Driven to build fast, high-performance web apps with optimized loading and responsive interactions.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
@@ -378,7 +377,7 @@ export default function Skills() {
               <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                 <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">Security</p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi.
+                Dedicated to enforcing strong security measures and best practices to safeguard applications and user data.
                 </p>
               </div>
               <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
@@ -401,21 +400,30 @@ export default function Skills() {
                   Powerful APIs
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget sem sodales gravida.
+                Proficient in building powerful APIs that ensure high performance, scalability, security and seamless integration.
                 </p>
-              </div>
+                              </div>
               <div className="relative min-h-[30rem] w-full grow">
-                <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
+                {/* <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
                   <div className="flex bg-gray-800/40 ring-1 ring-white/5">
                     <div className="-mb-px flex text-sm font-medium leading-6 text-gray-400">
                       <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">
-                        NotificationSetting.jsx
+                        app.py
                       </div>
-                      <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+                      <div className="border-r border-gray-600/10 px-4 py-2">create_user.py</div>
                     </div>
                   </div>
-                  <div className="px-6 pb-14 pt-6">{/* Your code example */}</div>
-                </div>
+                  <div className="px-6 pb-14 pt-6 text-white">
+                    <DeveloperProfile/>
+                  </div>
+                </div> */}
+                  <Image
+                  className="h-fit pl-10 mt-2 object-cover object-center"
+                  src={code}
+                  alt=""
+                  width={1000}
+                  height={1000}
+                />
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>

@@ -1,40 +1,39 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
-import myImage from '../images/home_animated_gif.gif'
+import myImage from '../images/my-image.jpg'
 
 const features = [
     {
-        name: 'Push to deploy.',
+        name: 'Currently,',
         description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+            'I am thriving as a Software Engineer at Cloudkaptan in Kolkata, where I specialize in cutting-edge development frameworks like ReactJS, Next.js, Django REST Framework, Node.js, GraphQL, Tailwind, and FastAPI.',
         icon: CloudArrowUpIcon,
     },
     {
-        name: 'SSL certificates.',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+        name: 'I have hands-on',
+        description: ' experience with state management using Redux Toolkit, building intuitive UIs with Material-UI (MUI), and creating dynamic workflows using React Flow',
         icon: LockClosedIcon,
     },
     {
-        name: 'Database backups.',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+        name: 'As a certified AWS Cloud',
+        description: ' Practitioner, I’ve successfully harnessed the power of various AWS services including DynamoDB, Cognito, Lambda, Secret Manager, CloudWatch, API Gateway, AppSync, and RDS to architect scalable and robust solutions.',
         icon: ServerIcon,
     },
 ]
 
 export default function Dashboard() {
     return (
-        <div className="max-w-full py-24 sm:py-32 gradient">
+        <div className="max-w-full py-24 sm:pt-32 gradient">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                     <div className="lg:pr-8 lg:pt-4">
                         <div className="lg:max-w-lg">
                             {/* <h2 className="text-base font-semibold leading-7 text-gray-100">Hello</h2> */}
                             <p className="mt-2 text-pretty text-2xl font-semibold tracking-tight text-gray-100 sm:text-4xl">
-                                Hello, <br/>I&apos;m Md Shoaib Akhtar
+                                Hello  👋, <br/>I&apos;m Md Shoaib Akhtar
                             </p>
                             <p className="mt-6 text-lg leading-8 text-gray-100">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
+                            A passionate Full-Stack Developer and technology enthusiast based in Kolkata, India📍. The drive to innovate and create is deeply rooted in me, just as much as my passion for sharing knowledge and helping others grow.
                             </p>
                             <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-400 lg:max-w-none">
                                 {features.map((feature) => (
@@ -49,15 +48,15 @@ export default function Dashboard() {
                             </dl>
                         </div>
                     </div>
-                    {/* <div className='flex justify-end'> */}
+                    <div className='flex justify-end round'>
                     <Image
                         alt="Product screenshot"
                         src={myImage}
-                        width={900}
+                        width={460}
                         height={100}
-                        className=""
+                        className="rounded-xl"
                     />
-                    {/* </div> */}
+                    </div>
                 </div>
             </div>
         </div>
