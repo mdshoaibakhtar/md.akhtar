@@ -1,13 +1,12 @@
+'use client'
 import Dashboard from "@/components/Dashboard";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-// import Projects from "@/components/Developer";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
-
-export default function Home() {
+import { useRef } from "react";
 
   const experienceData = [
     {
@@ -37,17 +36,41 @@ export default function Home() {
       institution: "VJ International School | Bhagalpur",
     }
   ];
+
+  interface HandleScrollToDiv {
+    (targetedRef:string): void; // No parameters, returns void
+  }
+
+export default function Home() {
+  const projectsRef = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
+  const skillsRef = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
+  const educationRef = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
+  const experienceRef = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
+  const experienceRefForMobile = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
+  // const contactRef = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
+  const handleScrollToDiv:HandleScrollToDiv = (targetedRef:string) => {
+    if(targetedRef == 'skillsRef'){
+      skillsRef.current?.scrollIntoView({ behavior: "smooth" });
+    }else if(targetedRef == 'educationRef'){
+      educationRef.current?.scrollIntoView({ behavior: "smooth" });
+    }else if(targetedRef == 'experienceRef'){
+      experienceRef.current?.scrollIntoView({ behavior: "smooth" });
+    }else if(targetedRef == 'projectsRef'){
+      projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+    }else if(targetedRef == 'experienceRefForMobile'){
+      experienceRefForMobile.current?.scrollIntoView({ behavior: "smooth", block: "center", });
+    }
+  };
   return (
     <div className="bg-black gradient">
-              <Navbar/>
-              <Dashboard/>
-              <Timeline timelineData = {experienceData} title="Experience"/>
-              <Timeline timelineData = {educationData} title="Education"/>
-              {/* <Timeline/> */}
-              <Experience/>
-              <Projects/>
-              <Skills/>
-              <Footer/>
+      <div><Navbar handleScrollToDiv={handleScrollToDiv}/></div>
+      <div><Dashboard /></div>
+      <div ref={experienceRef} className="pt-16"><Timeline timelineData={experienceData} title="Experience" /></div>
+      <div ref={educationRef} className="pt-16"><Timeline timelineData={educationData} title="Education" /></div>
+      <div ref={experienceRefForMobile}><Experience /></div>
+      <div ref={projectsRef} className="pt-20"><Projects /></div>
+      <div ref={skillsRef} className="pt-2"><Skills /></div>
+      <div><Footer /></div>
     </div>
   );
 }

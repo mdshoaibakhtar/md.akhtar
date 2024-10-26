@@ -13,8 +13,16 @@ import {
 import Image from 'next/image'
 import logo from '../images/sign.png'
 
+interface HandleScrollToDiv {
+    (targetedRef: string): void; // Accepts a string parameter, returns void
+  }
+  
+  // Define the interface for Navbar props
+  interface NavbarProps {
+    handleScrollToDiv: HandleScrollToDiv; // Accepts a function of type HandleScrollToDiv
+  }
 
-export default function Navbar() {
+  const Navbar: React.FC<NavbarProps> = ({ handleScrollToDiv }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
@@ -43,22 +51,18 @@ export default function Navbar() {
                     </button>
                 </div>
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-100">
-                        About
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-100">
+                    <p className="text-sm font-semibold leading-6 text-gray-100 cursor-pointer" onClick={() => handleScrollToDiv("experienceRef")}>
                         Experience
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-100">
-                        Skills
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-100">
-                        Projects
-                    </a>
-                    <a href="#" className="text-sm font-semibold leading-6 text-gray-100">
+                    </p>
+                    <p className="text-sm font-semibold leading-6 text-gray-100 cursor-pointer" onClick={() => handleScrollToDiv("educationRef")}>
                         Education
-                    </a>
+                    </p>
+                    <p className="text-sm font-semibold leading-6 text-gray-100 cursor-pointer" onClick={() => handleScrollToDiv("projectsRef")}>
+                        Projects
+                    </p>
+                    <p className="text-sm font-semibold leading-6 text-gray-100 cursor-pointer" onClick={() => handleScrollToDiv("skillsRef")}>
+                        Skills
+                    </p>
                 </PopoverGroup>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                     <a href="#" className="text-sm font-semibold leading-6 text-gray-100">
@@ -139,3 +143,4 @@ export default function Navbar() {
     )
 }
 
+export default Navbar
