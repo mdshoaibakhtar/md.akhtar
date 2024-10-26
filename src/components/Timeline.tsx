@@ -1,18 +1,18 @@
 'use client'
 
-interface item{
-    date:string
-    degree:string
-    institution:string
-}
 interface TimelineItem {
-    map(arg0: (item: item, index: number) => import("react").JSX.Element): import("react").ReactNode;
     id: number;
     date: string;
     degree: string;
     institution: string;
   }
-const Timeline = (timelineData:TimelineItem, title:string) => {
+  
+  // Interface for TimelineFeed component props
+  interface TimelineFeedProps {
+    timelineData: TimelineItem[];
+    title: string;
+  }
+  const Timeline: React.FC<TimelineFeedProps> = ({ timelineData, title }) => {
   return (
     <div className="mx-36 my-4">
         <h3 className="text-xl text-white text-center">
@@ -20,7 +20,7 @@ const Timeline = (timelineData:TimelineItem, title:string) => {
         </h3>
         <div className="relative flex flex-col items-center mt-4">
       <div className="absolute left-1/2 w-0.5 bg-gray-300 h-full" />
-      {timelineData.map((item:item, index:number) => (
+      {timelineData.map((item:TimelineItem, index:number) => (
         <div
           key={index}
           className={`flex items-center w-full ${index % 2 === 0 ? "justify-start" : "justify-end"} my-4`}
