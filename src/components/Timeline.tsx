@@ -14,7 +14,7 @@ interface TimelineItem {
   }
   const Timeline: React.FC<TimelineFeedProps> = ({ timelineData, title }) => {
   return (
-    <div className="mx-36 my-4">
+    <div className="mx-36 my-4 hidden sm:block">
         <h3 className="text-xl text-white text-center">
             {title}
         </h3>
