@@ -2,7 +2,7 @@
 
 export default function Experience() {
     return (
-        <div className="w-9/12 my-4 mx-auto lg:w-8/12">
+        <div className="w-9/12 my-4 mx-auto lg:w-8/12 block sm:hidden">
             <div className="py-4 text-lg text-center font-bold text-white">
                 <h4>My Experience</h4>
             </div>
