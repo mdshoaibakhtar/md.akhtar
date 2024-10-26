@@ -11,29 +11,40 @@ import { useRef } from "react";
   const experienceData = [
     {
       id: 1,
-      date: "September 2022 - Currently working",
-      degree: "Software Engineer",
-      institution: "Cloudkaptan | Kolkata",
+      date: "September 2022 - Currently working | Kolkata",
+      degree: "Software Engineer | Cloudkaptan",
+      institution: "",
+      dataList : ["Developed Scalable Web Applications: Engineered robust full-stack applications using ReactJS, Django REST Framework, and Node.js, significantly enhancing product performance and user engagement.",
+         "Developed Scalable Web Applications: Engineered robust full-stack applications using ReactJS, Django REST Framework, and Node.js, significantly enhancing product performance and user engagement.",
+        "Built Custom Dashboards & Payment Systems: Created customizable dashboards for banks and integrated a Payment Gateway and Document Upload web app, optimizing functionality for financial clients.",
+        "Enhanced Security & User Authentication: Implemented security measures, including AWS WAF, captcha, MFA, and QR code authentication, ensuring safe and seamless user experiences.",
+      "Workflow Automation with React Flow: Integrated React Flow to streamline workflows, enabling automated, intuitive business processes."]
     },
     {
       id: 2,
-      date: "March 2022 - August 2022",
-      degree: "Software Engineer Intern",
-      institution: "Aviram Technology",
+      date: "March 2022 - August 2022 | Remote",
+      degree: "Software Engineer Intern | Aviram Technology",
+      institution: "",
+      dataList : ["Developed Interactive Web Components: Created dynamic, reusable React components using TypeScript, enhancing UI consistency and scalability across multiple applications.",
+         "Optimized Frontend Performance: Implemented best practices in React for optimal rendering and state management, reducing page load times and improving user experience.",
+        "Worked with State Management Tools: Utilized Redux Toolkit to manage complex state logic, resulting in smoother user interactions and reliable data flows.",
+      "Implemented Responsive UI Designs: Translated Figma designs into responsive, accessible interfaces, ensuring cross-device compatibility."]
     }
   ];
   const educationData = [
     {
       id: 1,
-      date: "July 2019 - June 2023",
+      date: "July 2019 - June 2023 | Siliguri",
       degree: "Bachelor of Science in Computer Science",
-      institution: "Siliguri Institute Of Technology | Siliguri",
+      institution: "Siliguri Institute Of Technology",
+      dataList:[]
     },
     {
       id: 2,
-      date: "June 2017 - March 2019",
+      date: "June 2017 - March 2019 | Bhagalpur",
       degree: "Senior Secondary (+2) in Science",
-      institution: "VJ International School | Bhagalpur",
+      institution: "VJ International School",
+      dataList:[]
     }
   ];
 
