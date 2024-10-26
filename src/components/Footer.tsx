@@ -2,7 +2,7 @@
 
 export default function Footer() {
     return (
-        <div className="mx-12 py-4 border-y-2 flex-column justify-between max-w-full md:flex">
+        <div className="mx-12 py-4 border-y-2 flex-column justify-between max-w-full md:flex text-xs sm:text-base">
             <div className="flex-column md:flex w-6/12">
                 <div className="mb-4 lg:mb-0">
                     <p className="text-white mr-4">Connect with me </p>
@@ -105,7 +105,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="w-full md:w-6/12 text-white md:text-end my-4 lg:my-0">
-                <p className="text-xs">© 2024 - Copyright and Designed by Md Shoaib Akhtar</p>
+                <p className="">© 2024 - Copyright and Designed by Md Shoaib Akhtar</p>
             </div>
         </div>
     )
