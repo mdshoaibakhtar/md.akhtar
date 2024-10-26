@@ -36,8 +36,12 @@ body {
   background: linear-gradient(-45deg, rgba(6, 5, 30, 0.6), rgba(28, 4, 37, 0.6), rgba(21, 8, 17, 0.6), rgba(38, 11, 42, 0.6));
 }
 
-.flip {
+.flip,.tilt {
   transition: transform 0.9s ease;
+}
+
+.tilt:hover{
+  transform: rotate(5deg); /* Flips the image horizontally */
 }
 
 .flip:hover {
