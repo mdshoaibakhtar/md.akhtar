@@ -37,11 +37,11 @@ const SideDrawer: React.FC<DrawerProps> = ({ open, setOpen }) => {
                                             height={'640'}
                                         />
                                     </div>
-                                    <div className="relative flex sm:hidden mt-2 flex-1 px-4 sm:px-6 w-full h-[44vh] top-4">
+                                    <div className="relative flex sm:hidden mt-2 flex-1 px-4 sm:px-6 w-full h-[40vh] top-4">
                                         <iframe
                                             src='/assets/pdfs/Resume.pdf'
                                             allow="autoplay"
-                                            width={'330'}
+                                            width={'315'}
                                             height={'370'}
                                         />
                                     </div>
