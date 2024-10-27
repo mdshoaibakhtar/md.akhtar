@@ -19,8 +19,8 @@ export default function Projects() {
                     <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-30" />
                     <div className="absolute left-0 top-[150px] w-full text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         <div className='flex justify-around mt-6 flex-row h-10 sm:h-full'>
-                            <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Link</button>
-                            <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Source code</button>
+                            <a href='https://jobscript-portal.vercel.app' target='_blank'><button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Link</button></a>
+                            <a href='https://github.com/mdshoaibakhtar/myapp' target='_blank'><button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Source code</button></a>
                         </div>
                     </div>
                 </div>
@@ -63,8 +63,8 @@ export default function Projects() {
                     <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-30" />
                     <div className="absolute left-0 top-[150px] w-full text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         <div className='flex justify-around mt-6 flex-row h-10 sm:h-full'>
-                            <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Link</button>
-                            <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Source code</button>
+                            {/* <button className='cursor-not-allowed bg-yellow-400 text-gray-600 rounded-xl hover-effect py-2 px-12'>Private</button> */}
+                            {/* <button className='cursor-not-allowed bg-yellow-400 text-gray-600 rounded-xl hover-effect py-2 px-12'>Source code</button> */}
                         </div>
                     </div>
                 </div>
@@ -93,8 +93,7 @@ export default function Projects() {
                     <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-30" />
                     <div className="absolute left-0 top-[150px] w-full text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         <div className='flex justify-around mt-6 flex-row h-10 sm:h-full'>
-                            <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Link</button>
-                            <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Source code</button>
+                        {/* <button className='cursor-not-allowed bg-yellow-400 text-gray-600 rounded-xl hover-effect py-2 px-12'>Private</button> */}
                         </div>
                     </div>
                 </div>
@@ -117,8 +116,7 @@ export default function Projects() {
                     <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-30" />
                     <div className="absolute left-0 top-[150px] w-full text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                         <div className='flex justify-around mt-6 flex-row h-10 sm:h-full'>
-                            <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Link</button>
-                            <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Source code</button>
+                        {/* <button className='cursor-not-allowed bg-yellow-400 text-gray-600 rounded-xl hover-effect py-2 px-12'>Private</button> */}
                         </div>
                     </div>
                 </div>
