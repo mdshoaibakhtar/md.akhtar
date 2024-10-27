@@ -3,14 +3,14 @@ import Image from 'next/image'
 import company_project_0 from '../images/company_project_0.webp'
 import ml_project from '../images/ml_project.jpeg'
 import middleware from '../images/middleware.jpg'
-import jobscript from '../images/jobscript.png'
+import jobscript from '../images/jobscriptt.png'
 
 export default function Projects() {
     return (
         <div className="text-center flex flex-col items-center">
             <h3 className="text-white text-xl font-bold">My Recent Projects</h3>
-            <div className='flex mx-30 w-full sm:w-4/5 sm:px-12 px-8 py-8 sm:py-12 flex-col sm:flex-row'>
-                <div className="relative w-3/4 h-56 group mr-12 cursor-pointer mt-6">
+            <div className='flex mx-30 w-full sm:w-4/5 sm:px-12 px-8 py-4 sm:py-12 flex-col sm:flex-row'>
+                <div className="relative w-full h-56 sm:w-2/4 group mr-12 cursor-pointer mt-6">
                     <Image
                         src={jobscript}
                         alt=""
@@ -18,13 +18,13 @@ export default function Projects() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-30" />
                     <div className="absolute left-0 top-[150px] w-full text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <div className='flex justify-around mt-6 flex-col sm:flex-row h-32 sm:h-full'>
+                        <div className='flex justify-around mt-6 flex-row h-10 sm:h-full'>
                             <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Link</button>
                             <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Source code</button>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='mt-4 sm:mt-0'>
                     <h3 className="text-white text-xl font-bold text-start">The Jobscript</h3>
                     <ul className="list-disc ml-4 text-white sm:text-xl text-sm text-justify">
                         <li>Created a job/employment web
@@ -54,7 +54,7 @@ export default function Projects() {
                         <li> Integrated these private GraphQL APIs using the Boomi platform, enabling seamless connectivity and efficient data handling across systems.</li>
                     </ul>
                 </div>
-                <div className="relative w-3/4 h-56 group ml-12 cursor-pointer">
+                <div className="relative w-full h-56 sm:w-2/4 group sm:ml-12 cursor-pointer mt-6">
                     <Image
                         src={middleware}
                         alt=""
@@ -62,7 +62,7 @@ export default function Projects() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-30" />
                     <div className="absolute left-0 top-[150px] w-full text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <div className='flex justify-around mt-6 flex-col sm:flex-row h-32 sm:h-full'>
+                        <div className='flex justify-around mt-6 flex-row h-10 sm:h-full'>
                             <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Link</button>
                             <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Source code</button>
                         </div>
@@ -84,7 +84,7 @@ export default function Projects() {
                             via QR code, improving security by 76%.</li>
                     </ul>
                 </div>
-                <div className="relative w-3/4 h-56 group mr-12 cursor-pointer">
+                <div className="relative w-full h-56 sm:w-11/12 group mr-12 cursor-pointer mt-6">
                     <Image
                         src={company_project_0}
                         alt=""
@@ -92,14 +92,14 @@ export default function Projects() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-30" />
                     <div className="absolute left-0 top-[150px] w-full text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <div className='flex justify-around mt-6 flex-col sm:flex-row h-32 sm:h-full'>
+                        <div className='flex justify-around mt-6 flex-row h-10 sm:h-full'>
                             <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Link</button>
                             <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Source code</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='flex mx-30 w-full sm:w-4/5 sm:px-12 px-8 py-8 sm:py-12 flex-col-reverse sm:flex-row'>
+            <div className='flex mx-30 w-full sm:w-3/4 sm:px-12 px-8 py-8 sm:py-12 flex-col-reverse sm:flex-row'>
                 <div className=''>
                     <h3 className="text-white text-xl font-bold text-start mt-4 sm:mt-0">Crime data analysis against women</h3>
                     <ul className="list-disc ml-4 text-white sm:text-xl text-sm text-justify">
@@ -108,7 +108,7 @@ export default function Projects() {
                         <li>Presented findings in visual reports to highlight risk factors and geographical hotspots, supporting data-driven decision-making for safety measures.</li>
                     </ul>
                 </div>
-                <div className="relative w-3/4 h-56 group ml-12 cursor-pointer">
+                <div className="relative w-full h-56 sm:w-3/4 group sm:ml-12 cursor-pointer mt-6">
                     <Image
                         src={ml_project}
                         alt=""
@@ -116,7 +116,7 @@ export default function Projects() {
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-30" />
                     <div className="absolute left-0 top-[150px] w-full text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <div className='flex justify-around mt-6 flex-col sm:flex-row h-32 sm:h-full'>
+                        <div className='flex justify-around mt-6 flex-row h-10 sm:h-full'>
                             <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Link</button>
                             <button className='bg-yellow-400 text-gray-600 rounded-xl cursor-pointer hover-effect py-2 px-12'>Source code</button>
                         </div>
