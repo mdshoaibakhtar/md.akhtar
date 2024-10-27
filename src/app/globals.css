@@ -85,3 +85,28 @@ body {
   display: inline-block;
   border-right: 1px solid;
 }
+
+.rotate {
+  animation: rotation 3s;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+.rotate:hover{
+  animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

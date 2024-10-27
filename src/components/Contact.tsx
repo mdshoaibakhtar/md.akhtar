@@ -70,7 +70,6 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center mt-10">
-                    {/* <h2 className="text-2xl font-semibold mb-6">Animated Button</h2> */}
                     <div className="w-full bg-[#43005d99] text-white font-bold text-xl px-8 py-5 rounded-md text-center transition-all duration-500 ease-in-out hover:pr-8 relative overflow-hidden cursor-pointer group">
                         <span className="relative transition-all duration-500 group-hover:pr-6">Let&apos;s talk
                             <span className="absolute opacity-0 top-[-4px] right-[-1.25rem] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:right-0">
@@ -78,7 +77,6 @@ export default function Contact() {
                             </span>
                         </span>
                     </div>
-
                 </div>
 
             </form>
