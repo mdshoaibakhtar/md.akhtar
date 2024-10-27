@@ -23,7 +23,7 @@ const SideDrawer:React.FC<DrawerProps>= ({ open, setOpen }) => {
                             className="pointer-events-auto relative w-screen max-w-md transform transition duration-500 ease-in-out data-[closed]:translate-x-full sm:duration-700"
                         >
                             <TransitionChild>
-                                <div className="absolute left-0 top-0 -ml-8 flex pr-2 pt-4 duration-500 ease-in-out data-[closed]:opacity-0 sm:-ml-10 sm:pr-4">
+                                <div className="absolute left-0 top-0 -ml-8 flex pr-1 pt-4 duration-500 ease-in-out data-[closed]:opacity-0 sm:-ml-10 sm:pr-4">
                                     <button
                                         type="button"
                                         onClick={() => setOpen(false)}
@@ -35,15 +35,17 @@ const SideDrawer:React.FC<DrawerProps>= ({ open, setOpen }) => {
                                     </button>
                                 </div>
                             </TransitionChild>
-                            <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                            <div className="flex h-full flex-col bg-white py-6 shadow-xl">
                                 <div className="px-4 sm:px-6">
                                     <DialogTitle className="text-base font-semibold leading-6 text-gray-900">Md Shoaib Akhtar</DialogTitle>
                                 </div>
-                                <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                                <div className="relative mt-6 flex-1 px-4 sm:px-6 w-full">
                                     <iframe
                                         src='/assets/pdfs/Resume.pdf'
                                         allow="autoplay"
-                                    ></iframe>
+                                        width={'75%'}
+                                        height={'67%'}
+                                    />
                                 </div>
                             </div>
                         </DialogPanel>
