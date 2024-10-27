@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <div className="isolate text-white px-6 py-24 mt-12 sm:py-32 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-white text-4xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Let&apos;s share your thought&apos;s with me</h2>
+                <h2 className="text-white text-2xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Let&apos;s share your thought&apos;s with me</h2>
             </div>
             <form action="#" method="POST" className="mx-auto mt-4 max-w-xl sm:mt-8">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">

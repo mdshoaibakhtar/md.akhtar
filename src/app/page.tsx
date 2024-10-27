@@ -79,12 +79,12 @@ export default function Home() {
     <div className="bg-black gradient">
       <div><Navbar handleScrollToDiv={handleScrollToDiv}/></div>
       <div><Dashboard /></div>
-      <div ref={experienceRef} className="pt-16"><Timeline timelineData={experienceData} title="Experience" /></div>
-      <div ref={educationRef} className="pt-16"><Timeline timelineData={educationData} title="Education" /></div>
-      <div ref={experienceRefForMobile}><Experience /></div>
+      <div ref={experienceRef} className="sm:pt-16"><Timeline timelineData={experienceData} title="Experience" /></div>
+      <div ref={educationRef} className="sm:pt-16"><Timeline timelineData={educationData} title="Education" /></div>
+      <div ref={experienceRefForMobile} className="pt-12 sm:pt-0"><Experience /></div>
       <div ref={projectsRef} className="pt-20"><Projects /></div>
-      <div ref={skillsRef} className="pt-2"><Skills /></div>
-      <div ref={contactRef} className="pt-2"><Contact /></div>
+      <div ref={skillsRef} className="pt-8 sm:pt-2"><Skills /></div>
+      <div ref={contactRef} className="pt-12 sm:pt-2"><Contact /></div>
       <div><Footer /></div>
     </div>
   );
