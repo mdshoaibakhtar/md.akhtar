@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
 import { useRef } from "react";
+import Contact from "@/components/Contact";
 
   const experienceData = [
     {
@@ -58,7 +59,7 @@ export default function Home() {
   const educationRef = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
   const experienceRef = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
   const experienceRefForMobile = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
-  // const contactRef = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
+  const contactRef = useRef<HTMLDivElement>(null); // specify the type as HTMLDivElement
   const handleScrollToDiv:HandleScrollToDiv = (targetedRef:string) => {
     if(targetedRef == 'skillsRef'){
       skillsRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -70,6 +71,8 @@ export default function Home() {
       projectsRef.current?.scrollIntoView({ behavior: "smooth" });
     }else if(targetedRef == 'experienceRefForMobile'){
       experienceRefForMobile.current?.scrollIntoView({ behavior: "smooth", block: "center", });
+    }else if(targetedRef == 'contactRef'){
+      contactRef.current?.scrollIntoView({ behavior: "smooth", block: "center", });
     }
   };
   return (
@@ -81,6 +84,7 @@ export default function Home() {
       <div ref={experienceRefForMobile}><Experience /></div>
       <div ref={projectsRef} className="pt-20"><Projects /></div>
       <div ref={skillsRef} className="pt-2"><Skills /></div>
+      <div ref={contactRef} className="pt-2"><Contact /></div>
       <div><Footer /></div>
     </div>
   );
