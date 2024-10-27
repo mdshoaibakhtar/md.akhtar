@@ -242,7 +242,7 @@ export default function Skills() {
               <h4 className='mt-2 text-xs'>AWS Certified Cloud Practitioner</h4>
             </div>
             <div className='mt-4 mx-auto items-center rounded-xl border-2 flex justify-center hover:bg-gray-900 transition cursor-pointer'>
-              <h3 className='text-white text-base max-w-full'>Show Credentials</h3>
+              <a href="https://www.credly.com/badges/ee9d87ce-f08c-479c-84ec-7e537177d13e/public_url" target='_blank' className='text-white text-base max-w-full'>Show Credentials</a>
               <Image
                 alt="Statamic"
                 src={share}
@@ -274,7 +274,7 @@ export default function Skills() {
               <h4 className='mt-2 text-xs'>AWS Partner: Technical Accredited</h4>
             </div>
             <div className='mt-4 mx-auto items-center rounded-xl border-2 flex justify-center hover:bg-gray-900 transition cursor-pointer'>
-              <h3 className='text-white text-base max-w-full'>Show Credentials</h3>
+              <a href='https://www.credly.com/badges/0b308a10-3659-4d6d-b4d5-c739a7c842ed/public_url' target='_blank' className='text-white text-base max-w-full'>Show Credentials</a>
               <Image
                 alt="Statamic"
                 src={share}
