@@ -1,14 +1,13 @@
 'use client'
-import { Dialog, DialogBackdrop, DialogPanel, TransitionChild } from '@headlessui/react'
+import { Dialog, DialogBackdrop, DialogPanel, DialogTitle, TransitionChild } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
-import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 
 interface DrawerProps {
     open: boolean;
     setOpen: (isOpen: boolean) => void;
-}
-
-const SideDrawer: React.FC<DrawerProps> = ({ open, setOpen }) => {
+  }
+  
+const SideDrawer:React.FC<DrawerProps>= ({ open, setOpen }) => {
     return (
         <Dialog open={open} onClose={setOpen} className="relative z-10">
             <DialogBackdrop
@@ -38,19 +37,15 @@ const SideDrawer: React.FC<DrawerProps> = ({ open, setOpen }) => {
                             </TransitionChild>
                             <div className="flex h-full flex-col bg-white py-6 shadow-xl">
                                 <div className="px-4 sm:px-6">
-                                    {/* <DialogTitle className="text-base font-semibold leading-6 text-gray-900">Md Shoaib Akhtar</DialogTitle> */}
+                                    <DialogTitle className="text-base font-semibold leading-6 text-gray-900">Md Shoaib Akhtar</DialogTitle>
                                 </div>
                                 <div className="relative mt-6 flex-1 px-4 sm:px-6 w-full">
-                                    {/* <iframe
+                                    <iframe
                                         src='/assets/pdfs/Resume.pdf'
                                         allow="autoplay"
                                         width={'75%'}
                                         height={'67%'}
-                                    /> */}
-                                    <DocViewer
-                                        pluginRenderers={DocViewerRenderers}
-                                        documents={[{'uri':'/assets/pdfs/Resume.pdf', 'fileType':'application/pdf'}]}
-                                        />
+                                    />
                                 </div>
                             </div>
                         </DialogPanel>
