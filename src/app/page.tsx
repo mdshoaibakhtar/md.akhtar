@@ -8,6 +8,7 @@ import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
 import { useRef } from "react";
 import Contact from "@/components/Contact";
+import Education from "@/components/Education";
 
   const experienceData = [
     {
@@ -82,6 +83,7 @@ export default function Home() {
       <div ref={experienceRef} className="sm:pt-16"><Timeline timelineData={experienceData} title="Experience" /></div>
       <div ref={educationRef} className="sm:pt-16"><Timeline timelineData={educationData} title="Education" /></div>
       <div ref={experienceRefForMobile} className="pt-12 sm:pt-0"><Experience /></div>
+      <div ref={educationRef} className="pt-2 sm:pt-0"><Education /></div>
       <div ref={projectsRef} className="pt-20"><Projects /></div>
       <div ref={skillsRef} className="pt-8 sm:pt-2"><Skills /></div>
       <div ref={contactRef} className="pt-12 sm:pt-2"><Contact /></div>
