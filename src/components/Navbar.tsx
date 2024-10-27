@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from 'react'
 import {
     Dialog,
@@ -14,23 +13,22 @@ import Image from 'next/image'
 import logo from '../images/sign.png'
 
 interface HandleScrollToDiv {
-    (targetedRef: string): void; // Accepts a string parameter, returns void
-  }
-  
-  // Define the interface for Navbar props
-  interface NavbarProps {
-    handleScrollToDiv: HandleScrollToDiv; // Accepts a function of type HandleScrollToDiv
-  }
+    (targetedRef: string): void;
+}
 
-  const Navbar: React.FC<NavbarProps> = ({ handleScrollToDiv }) => {
+interface NavbarProps {
+    handleScrollToDiv: HandleScrollToDiv; // Accepts a function of type HandleScrollToDiv
+}
+
+const Navbar: React.FC<NavbarProps> = ({ handleScrollToDiv }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
         <header className="fixed w-full z-10 gradient nav">
             <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
                 <div className="flex lg:flex-1">
-                    <a href="#" className="-m-1.5 p-1.5">
-                        <span className="sr-only">Your Company</span>
+                    <a href="/" className="-m-1.5 p-1.5">
+                        <span className="sr-only">Home</span>
                         <Image
                             alt=""
                             width={1800}
@@ -70,6 +68,7 @@ interface HandleScrollToDiv {
                     </a>
                 </div>
             </nav>
+            {/* MOBILE VIEW : HAMBURGER MENU */}
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden gradient">
                 <div className="fixed inset-0 z-10 gradient" />
                 <DialogPanel className="gradient nav fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -96,38 +95,23 @@ interface HandleScrollToDiv {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-900"
-                                >
+                                <p className="text-md font-semibold leading-6 text-gray-100 cursor-pointer py-2" onClick={() => { handleScrollToDiv("experienceRef"); setMobileMenuOpen(false) }}>
                                     Experience
-                                </a>
-                                <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-900"
-                                >
-                                    Skills
-                                </a>
-                                <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-900"
-                                >
-                                    Projects
-                                </a>
-                                <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-900"
-                                >
+                                </p>
+                                <p className="text-md font-semibold leading-6 text-gray-100 cursor-pointer py-2" onClick={() => { handleScrollToDiv("educationRef"); setMobileMenuOpen(false) }}>
                                     Education
-                                </a>
+                                </p>
+                                <p className="text-md font-semibold leading-6 text-gray-100 cursor-pointer py-2" onClick={() => { handleScrollToDiv("projectsRef"); setMobileMenuOpen(false) }}>
+                                    Projects
+                                </p>
+                                <p className="text-md font-semibold leading-6 text-gray-100 cursor-pointer py-2" onClick={() => { handleScrollToDiv("skillsRef"); setMobileMenuOpen(false) }}>
+                                    Skills
+                                </p>
                             </div>
                             <div className="py-6">
-                                <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-900"
-                                >
+                                <p className="text-md font-semibold leading-6 text-gray-100 cursor-pointer py-2" onClick={() => { handleScrollToDiv("contactRef"); setMobileMenuOpen(false) }}>
                                     Contact
-                                </a>
+                                </p>
                             </div>
                         </div>
                     </div>
