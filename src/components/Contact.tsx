@@ -68,37 +68,19 @@ export default function Contact() {
                             />
                         </div>
                     </div>
-                    {/* <Field className="flex gap-x-4 sm:col-span-2">
-                        <div className="flex h-6 items-center">
-                            <Switch
-                                checked={agreed}
-                                onChange={setAgreed}
-                                className="group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 data-[checked]:bg-indigo-600"
-                            >
-                                <span className="sr-only">Agree to policies</span>
-                                <span
-                                    aria-hidden="true"
-                                    className="h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out group-data-[checked]:translate-x-3.5"
-                                />
-                            </Switch>
-                        </div>
-                        <Label className="text-sm leading-6 text-gray-600">
-                            By selecting this, you agree to our{' '}
-                            <a href="#" className="font-semibold text-indigo-600">
-                                privacy&nbsp;policy
-                            </a>
-                            .
-                        </Label>
-                    </Field> */}
                 </div>
-                <div className="mt-10">
-                    <button
-                        type="submit"
-                        className="block w-full rounded-md bg-gray-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                        Let&apos;s talk
-                    </button>
+                <div className="flex flex-col items-center justify-center mt-10">
+                    {/* <h2 className="text-2xl font-semibold mb-6">Animated Button</h2> */}
+                    <div className="w-full bg-[#43005d99] text-white font-bold text-xl px-8 py-5 rounded-md text-center transition-all duration-500 ease-in-out hover:pr-8 relative overflow-hidden cursor-pointer group">
+                        <span className="relative transition-all duration-500 group-hover:pr-6">Let&apos;s talk
+                            <span className="absolute opacity-0 top-[-4px] right-[-1.25rem] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:right-0">
+                                &raquo;
+                            </span>
+                        </span>
+                    </div>
+
                 </div>
+
             </form>
         </div>
     )
