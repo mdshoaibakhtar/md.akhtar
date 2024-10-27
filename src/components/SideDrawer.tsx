@@ -15,7 +15,7 @@ const SideDrawer: React.FC<DrawerProps> = ({ open, setOpen }) => {
             />
 
             <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-                <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div className="flex justify-center p-4 text-center sm:items-center sm:p-0">
                     <DialogPanel
                         transition
                         className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-1 sm:w-full sm:max-w-2xl data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95"
@@ -29,18 +29,20 @@ const SideDrawer: React.FC<DrawerProps> = ({ open, setOpen }) => {
                                     <DialogTitle as="h3" className="text-base font-semibold leading-6 text-gray-900">
                                         Resume
                                     </DialogTitle>
-                                    <div className="mt-2">
-                                        {/* <p className="text-sm text-gray-500">
-                                            Are you sure you want to deactivate your account? All of your data will be permanently removed.
-                                            This action cannot be undone.
-                                        </p> */}
-                                    </div>
-                                    <div className="relative mt-6 flex-1 px-4 sm:px-6 w-full h-[78vh]">
+                                    <div className="relative hidden sm:flex mt-2 flex-1 px-4 sm:px-6 w-full sm:h-[88vh] top-4">
                                         <iframe
                                             src='/assets/pdfs/Resume.pdf'
                                             allow="autoplay"
                                             width={'500'}
-                                            height={'590'}
+                                            height={'640'}
+                                        />
+                                    </div>
+                                    <div className="relative flex sm:hidden mt-2 flex-1 px-4 sm:px-6 w-full h-[50vh] top-4">
+                                        <iframe
+                                            src='/assets/pdfs/Resume.pdf'
+                                            allow="autoplay"
+                                            width={'300'}
+                                            height={'400'}
                                         />
                                     </div>
                                 </div>
