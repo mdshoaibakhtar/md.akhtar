@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import myImage from '../images/my-image.jpg'
-import {PresentationChartLineIcon } from '@heroicons/react/24/solid'
+import { PresentationChartLineIcon } from '@heroicons/react/24/solid'
 import { HandThumbUpIcon } from '@heroicons/react/20/solid'
 import { CodeBracketSquareIcon } from '@heroicons/react/16/solid'
 
@@ -31,11 +31,17 @@ export default function Dashboard() {
                     <div className="lg:pr-8 lg:pt-4">
                         <div className="lg:max-w-lg">
                             {/* <h2 className="text-base font-semibold leading-7 text-gray-100">Hello</h2> */}
-                            <p className="mt-2 text-pretty text-2xl font-semibold tracking-tight text-gray-100 sm:text-4xl">
-                                Hello  👋, <br/>I&apos;m Md Shoaib Akhtar
-                            </p>
+                            {/* <p className="mt-2 text-pretty text-2xl font-semibold tracking-tight text-gray-100 sm:text-4xl">
+                                Hello  👋,
+                            </p> */}
+                            <div className="text-white">
+                                <h1 className="text-2xl font-bold animate-typing whitespace-nowrap">
+                                Hello  👋, I&apos;m Md Shoaib Akhtar
+                                </h1>
+                            </div>
+
                             <p className="mt-6 text-lg leading-8 text-gray-100">
-                            A passionate Full-Stack Developer and technology enthusiast based in Kolkata, India📍. The drive to innovate and create is deeply rooted in me, just as much as my passion for sharing knowledge and helping others grow.
+                                A passionate Full-Stack Developer and technology enthusiast based in Kolkata, India📍. The drive to innovate and create is deeply rooted in me, just as much as my passion for sharing knowledge and helping others grow.
                             </p>
                             <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-400 lg:max-w-none">
                                 {features.map((feature) => (
@@ -51,13 +57,13 @@ export default function Dashboard() {
                         </div>
                     </div>
                     <div className='flex justify-end round'>
-                    <Image
-                        alt="Product screenshot"
-                        src={myImage}
-                        width={460}
-                        height={100}
-                        className="rounded-xl"
-                    />
+                        <Image
+                            alt="Product screenshot"
+                            src={myImage}
+                            width={460}
+                            height={100}
+                            className="rounded-xl"
+                        />
                     </div>
                 </div>
             </div>
