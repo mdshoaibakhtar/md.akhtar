@@ -9,7 +9,7 @@ export default function Education() {
             <ol className="relative text-white border-s border-gray-200 dark:border-gray-700">
                 <li className="mb-10 ms-4 text-white">
                     <div className="text-white absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <h3 className="text-white text-lg font-semibold text-gray-900 dark:text-white">Bachelor of Science in Computer Science                    </h3>
+                    <h3 className="text-white text-lg font-semibold text-gray-900 dark:text-white">Bachelor of Technology in Computer Science                    </h3>
                     <time className="text-white mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Siliguri Institute Of Technology <br/></time>
                     <time className="text-white mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July 2019 - June 2023 | Siliguri</time>
                 </li>
