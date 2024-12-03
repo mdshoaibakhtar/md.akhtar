@@ -31,7 +31,7 @@ const SideDrawer: React.FC<DrawerProps> = ({ open, setOpen }) => {
                                     </DialogTitle>
                                     <div className="relative hidden sm:flex mt-2 flex-1 px-4 sm:px-6 w-full sm:h-[88vh] top-4">
                                         <iframe
-                                            src='/assets/pdfs/Resume.pdf'
+                                            src='/assets/pdfs/Md_Shoaib_Akhtar.pdf'
                                             allow="autoplay"
                                             width={'500'}
                                             height={'640'}
@@ -39,7 +39,7 @@ const SideDrawer: React.FC<DrawerProps> = ({ open, setOpen }) => {
                                     </div>
                                     <div className="relative flex sm:hidden mt-2 flex-1 px-4 sm:px-6 w-full h-[40vh] top-4">
                                         <iframe
-                                            src='/assets/pdfs/Resume.pdf'
+                                            src='/assets/pdfs/Md_Shoaib_Akhtar.pdf'
                                             allow="autoplay"
                                             width={'315'}
                                             height={'370'}
