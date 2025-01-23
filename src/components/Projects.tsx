@@ -25,7 +25,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className='mt-4 sm:mt-0'>
-                    <h3 className="text-white text-xl font-bold text-start">The Jobscript</h3>
+                    <h3 className="text-white text-xl font-bold text-start">Jobdotjs</h3>
                     <ul className="list-disc ml-4 text-white sm:text-xl text-sm text-justify">
                         <li>Created a job/employment web
                             application with separate access for
@@ -34,7 +34,7 @@ export default function Projects() {
                         <li> Implemented functionalities for job
                             seekers to easily apply for job roles
                             and for admins to post job openings</li>
-                        <li>  Utilized ReactJS for front-end
+                        <li>  Utilized Nextjs for front-end
                             development and Django REST
                             Framework (DRF) for building robust
                             APIs.</li>
