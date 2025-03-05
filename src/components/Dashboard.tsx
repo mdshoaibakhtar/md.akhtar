@@ -79,7 +79,7 @@ export default function Dashboard() {
                         <Image
                             alt="Product screenshot"
                             src={myImage}
-                            width={460}
+                            width={520}
                             height={100}
                             className="rounded-xl"
                         />
