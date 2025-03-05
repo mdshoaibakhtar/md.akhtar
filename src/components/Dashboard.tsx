@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import myImage from '../images/my-image.jpg'
+import myImage from '../images/my-image.jpeg'
 import { PresentationChartLineIcon } from '@heroicons/react/24/solid'
 import { HandThumbUpIcon } from '@heroicons/react/20/solid'
 import { CodeBracketSquareIcon } from '@heroicons/react/16/solid'
@@ -29,7 +29,7 @@ export default function Dashboard() {
     const [open, setOpen] = useState(false)
     return (
         <div className="max-w-full py-24 sm:pt-32 gradient">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl lg:px-8">
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                     <div className="lg:pr-8 lg:pt-4">
                         <div className="lg:max-w-lg">
@@ -75,12 +75,12 @@ export default function Dashboard() {
                             </dl>
                         </div>
                     </div>
-                    <div className='flex justify-end round'>
+                    <div className='ml-16 round w-[32rem] h-[94vh]'>
                         <Image
                             alt="Product screenshot"
                             src={myImage}
-                            width={460}
-                            height={100}
+                            // width={440}
+                            // height={48}
                             className="rounded-xl"
                         />
                     </div>
