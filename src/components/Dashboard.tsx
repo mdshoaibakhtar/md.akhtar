@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import myImage from '../images/my-image.jpg'
+import myImage from '../images/my-image.jpeg'
 import { PresentationChartLineIcon } from '@heroicons/react/24/solid'
 import { HandThumbUpIcon } from '@heroicons/react/20/solid'
 import { CodeBracketSquareIcon } from '@heroicons/react/16/solid'
