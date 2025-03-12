@@ -4,7 +4,7 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
+import Projects from "../components/Projects/Projects";
 import Timeline from "@/components/Timeline";
 import { useRef } from "react";
 import Contact from "@/components/Contact";
