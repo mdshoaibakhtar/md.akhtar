@@ -4,7 +4,7 @@ type ProjectName =
   | "jobdotjs"
   | "middlewaredev"
   | "covid19"
-  | "easyapp"
+  | "swiftpaydocs"
   // | "getItDone"
   // | "urlShortener"
   // | "thisWebsite"
@@ -115,8 +115,8 @@ const projects: Projects = {
       live: "",
     },
   },
-  easyapp: {
-    title: "EasyApp",
+  swiftpaydocs: {
+    title: "SwiftPayDocs",
     description: [
       "Engineered **high-performance**, **scalable web applications** using **ReactJS**, **Django REST Framework**, and **AWS services**, ensuring seamless front-end and back-end integration.",
       "Designed and optimized efficient database architectures using **PostgreSQL** and **DynamoDB**, improving query performance and data retrieval speeds.",
@@ -132,7 +132,7 @@ const projects: Projects = {
     },
     images: {
       main:{
-          link: "/project/easyapp/easyapp.png",
+          link: "/project/swiftpaydocs/swiftpaydocs.png",
           width: 1903,
           height: 800,
       }
@@ -150,7 +150,7 @@ const projects: Projects = {
   //     "Check this video made by my hackathon partner **Priya Aswani** **[explaining how it works](https://www.linkedin.com/posts/activity-6755554068011319296-VlpE)**",
   //   ],
   //   links: {
-  //     github: "https://github.com/BhavyaCodes/get-it-done",
+  //     github: "https://github.com/MdShoaibCodes/get-it-done",
   //     live: "https://get-it-done-git-master-juggernaut9.vercel.app",
   //   },
   //   stack: [logos.react, logos.chartjs, logos.materialui, logos.vercel],
@@ -183,7 +183,7 @@ const projects: Projects = {
   //     },
   //   },
   //   links: {
-  //     github: "https://github.com/BhavyaCodes/url-shortener-ts-backend",
+  //     github: "https://github.com/MdShoaibCodes/url-shortener-ts-backend",
   //     live: "https://short-url-three.vercel.app/",
   //   },
   //   stack: [
@@ -207,7 +207,7 @@ const projects: Projects = {
   //   ],
   //   links: {
   //     live: "https://mdshoaibakhtar.dev",
-  //     github: "https://github.com/BhavyaCodes/portfolio",
+  //     github: "https://github.com/MdShoaibCodes/portfolio",
   //   },
   //   stack: [
   //     logos.typescript,
@@ -234,7 +234,7 @@ const projects: Projects = {
   //   ],
   //   links: {
   //     live: "https://recipe-material-ui-juggernaut9.vercel.app/",
-  //     github: "https://github.com/BhavyaCodes/recipe-material-ui",
+  //     github: "https://github.com/MdShoaibCodes/recipe-material-ui",
   //   },
   //   stack: [logos.react, logos.materialui],
   //   images: {
@@ -248,7 +248,7 @@ const projects: Projects = {
   // pokemon: {
   //   special: {
   //     text: "hacktoberfest - 55 pull requests",
-  //     link: "https://github.com/BhavyaCodes/pokemon/pulls?q=is%3Apr+is%3Aclosed",
+  //     link: "https://github.com/MdShoaibCodes/pokemon/pulls?q=is%3Apr+is%3Aclosed",
   //   },
   //   title: "Pokemon",
   //   description: [
@@ -258,7 +258,7 @@ const projects: Projects = {
   //   ],
   //   links: {
   //     live: "https://pokemon-hacktoberfest.vercel.app/",
-  //     github: "https://github.com/BhavyaCodes/pokemon",
+  //     github: "https://github.com/MdShoaibCodes/pokemon",
   //   },
   //   stack: [logos.github, logos.git, logos.react, logos.bootstrap],
   //   images: {
@@ -280,7 +280,7 @@ const projects: Projects = {
   //   ],
   //   links: {
   //     live: "https://jokes-hooks.vercel.app/",
-  //     github: "https://github.com/BhavyaCodes/Jokes-v2",
+  //     github: "https://github.com/MdShoaibCodes/Jokes-v2",
   //   },
   //   stack: [logos.react, logos.materialui],
   //   images: {

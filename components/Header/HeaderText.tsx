@@ -35,7 +35,7 @@ function HeaderText() {
       itemType="https://schema.org/Person"
       className={classes.root}
     >
-      <meta itemProp="familyName" content="Tomar" />
+      <meta itemProp="familyName" content="Akhtar" />
       <meta itemProp="gender" content="https://schema.org/Male" />
       <meta itemProp="name" content="Md Shoaib Akhtar" />
       <Typography
