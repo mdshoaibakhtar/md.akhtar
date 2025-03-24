@@ -26,7 +26,27 @@ type logoNames =
   | "framerMotion"
   | "trpc"
   | "cypress"
-  | "reactQuery";
+  | "reactQuery"
+  | "confluence"
+  | "django"
+  | "java"
+  | "jira"
+  | "python"
+  | "aws"
+  | "tailwind"
+  | "vscode"
+  | "lambda"
+  | "apiGateway"
+  | "appflow"
+  | "appsync"
+  | "cognito"
+  | "gluejob"
+  | "iam"
+  | "rds"
+  | "pinpoint"
+  | "secretsManager"
+  | "sqs"
+  | "vpc"
 
 type Logos = {
   [k in logoNames]: {
@@ -158,6 +178,86 @@ const logos: Logos = {
   reactQuery: {
     label: "React Query",
     logo: "/assets/icons/react-query.svg",
+  },
+  confluence: {
+    label: "Confluence",
+    logo: "/assets/icons/confluence.svg",
+  },
+  django: {
+    label: "Django",
+    logo: "/assets/icons/django.svg",
+  },
+  java: {
+    label: "Java",
+    logo: "/assets/icons/java.svg",
+  },
+  jira: {
+    label: "Jira",
+    logo: "/assets/icons/jira.svg",
+  },
+  python: {
+    label: "React Query",
+    logo: "/assets/icons/python.svg",
+  },
+  tailwind: {
+    label: "Tailwind",
+    logo: "/assets/icons/tailwind.svg",
+  },
+  vscode: {
+    label: "VS Code",
+    logo: "/assets/icons/vscode.svg",
+  },
+  aws: {
+    label: "AWS",
+    logo: "/assets/icons/aws.svg",
+  },
+  lambda: {
+    label: "Lambda",
+    logo: "/assets/icons/aws/lambda.svg",
+  },
+  apiGateway: {
+    label: "API Gateway",
+    logo: "/assets/icons/aws/apigateway.svg",
+  },
+  appflow: {
+    label: "AppFlow",
+    logo: "/assets/icons/aws/appflow.svg",
+  },
+  appsync: {
+    label: "AppSync",
+    logo: "/assets/icons/aws/appsync.svg",
+  },
+  cognito: {
+    label: "Cognito",
+    logo: "/assets/icons/aws/cognito.svg",
+  },
+  gluejob: {
+    label: "Glue",
+    logo: "/assets/icons/aws/gluejob.svg",
+  },
+  iam: {
+    label: "IAM",
+    logo: "/assets/icons/aws/iam.svg",
+  },
+  pinpoint: {
+    label: "Pinpoint",
+    logo: "/assets/icons/aws/pinpoint.svg",
+  },
+  rds: {
+    label: "RDS",
+    logo: "/assets/icons/aws/rds.svg",
+  },
+  secretsManager: {
+    label: "Secrets Manager",
+    logo: "/assets/icons/aws/secrets.svg",
+  },
+  sqs: {
+    label: "SQS",
+    logo: "/assets/icons/aws/sqs.svg",
+  },
+  vpc: {
+    label: "VPC",
+    logo: "/assets/icons/aws/vpc.svg",
   },
 };
 

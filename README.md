@@ -1,17 +1,17 @@
 <h1 align="center"><a href="https://mdshoaibakhtar.dev">Md Shoaib Akhtar.dev</a> - Md Shoaib Akhtar's Portfolio</h1>
 
-![Lines of code](https://img.shields.io/tokei/lines/github/BhavyaCodes/portfolio?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/BhavyaCodes/portfolio?style=flat-square&logo=github) <a href="https://discord.gg/az7Au3ZDGW">![Discord](https://img.shields.io/discord/686069011481362462?logo=discord&style=flat-square)</a> ![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/BhavyaCodes/portfolio?logo=LGTM&style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/BhavyaCodes/portfolio?logo=typescript&logoColor=white&style=flat-square) ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?style=flat-square&app=portfolio-git-main-juggernaut9)
+![Lines of code](https://img.shields.io/tokei/lines/github/MdShoaibCodes/portfolio?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/MdShoaibCodes/portfolio?style=flat-square&logo=github) <a href="https://discord.gg/az7Au3ZDGW">![Discord](https://img.shields.io/discord/686069011481362462?logo=discord&style=flat-square)</a> ![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/MdShoaibCodes/portfolio?logo=LGTM&style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/MdShoaibCodes/portfolio?logo=typescript&logoColor=white&style=flat-square) ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?style=flat-square&app=portfolio-git-main-juggernaut9)
 
 ---
 
 <h2>Demo</h2>
-<img src="/.github/portfolio.gif">
+<img src="/.github/myportfolio.gif">
 
 ---
 
 ## Motive
 
-The motive of this project is to showcase my current and future projects. This is the first version of my portfolio, more features will be added in future, feel free to drop your suggestions in <a href="https://github.com/BhavyaCodes/portfolio/discussions">Discussions</a>
+The motive of this project is to showcase my current and future projects. This is the first version of my portfolio, more features will be added in future, feel free to drop your suggestions in <a href="https://github.com/MdShoaibCodes/portfolio/discussions">Discussions</a>
 
 ---
 
@@ -54,9 +54,9 @@ The motive of this project is to showcase my current and future projects. This i
 
 <h2>License</h2>
 
-![GitHub](https://img.shields.io/github/license/BhavyaCodes/portfolio?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/MdShoaibCodes/portfolio?style=for-the-badge)
 
-Built by <a href="https://github.com/BhavyaCodes">@BhavyaCodes</a> for his own portfolio. **Copyright (c) 2021 by Md Shoaib Akhtar**. You are allowed to use this webpage for both personal and commercial use, but **NOT** to claim it as your own design. **A credit to the original author, Md Shoaib Akhtar, is a must!**
+Built by <a href="https://github.com/MdShoaibCodes">@MdShoaibCodes</a> for his own portfolio. **Copyright (c) 2021 by Md Shoaib Akhtar**. You are allowed to use this webpage for both personal and commercial use, but **NOT** to claim it as your own design. **A credit to the original author, Md Shoaib Akhtar, is a must!**
 
 I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
 

@@ -15,7 +15,7 @@ const projects: ProjectType[] = [
   allProjects.jobdotjs,
   allProjects.middlewaredev,
   allProjects.covid19,
-  allProjects.easyapp,
+  allProjects.swiftpaydocs,
   // allProjects.getItDone,
 ];
 
