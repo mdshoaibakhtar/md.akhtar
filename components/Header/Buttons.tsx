@@ -6,9 +6,7 @@ import ForumIcon from "@material-ui/icons/Forum";
 import CodeIcon from "@material-ui/icons/CloudDownloadRounded";
 import { Box, IconButton, Link, Button } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-// '../../public/Md_Shoaib_Akhtar.pdf'
 
-const filePath = '../../public/Md_Shoaib_Akhtar.pdf'; // Ensure this matches the file in `public/`
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     bigButton: {
@@ -29,15 +27,18 @@ const useStyles = makeStyles((theme: Theme) =>
 
 function Buttons() {
   const classes = useStyles();
+  const openPDFInNewTab = (driveLink: string) => {
+    if (!driveLink) {
+      console.error("Invalid link provided");
+      return;
+    }
 
-  const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = filePath;
-    link.download = "Md_Shoaib_Akhtar.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const newTab = window.open(driveLink, "_blank");
+    if (!newTab) {
+      alert("Popup blocked! Please allow popups for this site.");
+    }
   };
+
   return (
     <>
       <Box mx={-1}>
@@ -102,19 +103,16 @@ function Buttons() {
         >
           Get in touch
         </Button>
-        {/* <NextLink href="/projects"> */}
           <Button
           component="a"
           variant="outlined"
           color="secondary"
-          className={classes.bigButton}
+            className={classes.bigButton}
+          onClick={() => openPDFInNewTab("https://drive.google.com/file/d/13jdZANqq8T2mNq5YTHHi9jVM_7TOc6Ow/view")}
           startIcon={<CodeIcon />}
-          onClick={() => downloadPDF()}
-            // href="/projects"
           >
             My Resume
           </Button>
-        {/* </NextLink> */}
       </Box>
     </>
   );
