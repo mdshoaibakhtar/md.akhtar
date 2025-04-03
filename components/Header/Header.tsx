@@ -32,7 +32,8 @@ function Header() {
         display: "flex",
       },
       headerImg: {
-        maxWidth: "90%",
+        maxWidth: "100%",
+        height:'75%'
       },
       gridItem: {
         display: "flex",
@@ -64,7 +65,7 @@ function Header() {
             <Grid item md={6} xs={12} className={classes.gridItem}>
               <img
                 className={classes.headerImg}
-                src="/assets/programmer2.svg"
+                src="/assets/myimage.png"
                 alt="programmer illustration"
               />
             </Grid>

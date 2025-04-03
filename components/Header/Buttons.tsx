@@ -3,11 +3,12 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import ForumIcon from "@material-ui/icons/Forum";
-import CodeIcon from "@material-ui/icons/Code";
+import CodeIcon from "@material-ui/icons/CloudDownloadRounded";
 import { Box, IconButton, Link, Button } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import NextLink from "next/link";
+// '../../public/Md_Shoaib_Akhtar.pdf'
 
+const filePath = '../../public/Md_Shoaib_Akhtar.pdf'; // Ensure this matches the file in `public/`
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     bigButton: {
@@ -28,6 +29,15 @@ const useStyles = makeStyles((theme: Theme) =>
 
 function Buttons() {
   const classes = useStyles();
+
+  const downloadPDF = () => {
+    const link = document.createElement("a");
+    link.href = filePath;
+    link.download = "Md_Shoaib_Akhtar.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <Box mx={-1}>
@@ -92,18 +102,19 @@ function Buttons() {
         >
           Get in touch
         </Button>
-        <NextLink href="/projects">
+        {/* <NextLink href="/projects"> */}
           <Button
-            component="a"
-            variant="outlined"
-            color="secondary"
-            className={classes.bigButton}
-            startIcon={<CodeIcon />}
-            href="/projects"
+          component="a"
+          variant="outlined"
+          color="secondary"
+          className={classes.bigButton}
+          startIcon={<CodeIcon />}
+          onClick={() => downloadPDF()}
+            // href="/projects"
           >
-            See my work
+            My Resume
           </Button>
-        </NextLink>
+        {/* </NextLink> */}
       </Box>
     </>
   );
