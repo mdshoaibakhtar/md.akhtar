@@ -49,6 +49,7 @@ type logoNames =
   | "vpc"
   | "spark"
   | "dynamodb"
+  | "ec2"
 
 type Logos = {
   [k in logoNames]: {
@@ -114,10 +115,6 @@ const logos: Logos = {
     label: "Next.js",
     logo: "/assets/icons/nextjs.svg",
     invert: true,
-  },
-  s3: {
-    label: "AWS-S3",
-    logo: "/assets/icons/s3.svg",
   },
   socketio: {
     label: "Socket.IO",
@@ -198,7 +195,7 @@ const logos: Logos = {
     logo: "/assets/icons/jira.svg",
   },
   python: {
-    label: "React Query",
+    label: "Python",
     logo: "/assets/icons/python.svg",
   },
   tailwind: {
@@ -266,8 +263,16 @@ const logos: Logos = {
     logo: "/assets/icons/spark.svg",
   },
   dynamodb: {
-    label: "dynamodb",
+    label: "DynamoDb",
     logo: "/assets/icons/aws/dynamodb.svg",
+  },
+  ec2: {
+    label: "Ec2",
+    logo: "/assets/icons/aws/ec2.svg",
+  },
+  s3: {
+    label: "S3",
+    logo: "/assets/icons/aws/s3.svg",
   },
 };
 

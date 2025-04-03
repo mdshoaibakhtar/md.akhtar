@@ -10,6 +10,7 @@ import Footer from "components/Footer";
 import AllProjectsButton from "components/Projects/AllProjectsButton";
 
 import allProjects, { ProjectType } from "lib/projects";
+import AWSSkills from "components/AWS Skills/AWSSkills";
 
 const projects: ProjectType[] = [
   allProjects.jobdotjs,
@@ -38,6 +39,7 @@ const IndexPage = () => {
         <>
           <Header />
           <Skills />
+          <AWSSkills />
           <ProjectsTitle text={"Featured Projects"} />
           <Projects projects={projects} />
           <AllProjectsButton />

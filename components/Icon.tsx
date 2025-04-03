@@ -29,7 +29,7 @@ function Icon({
         alignItems: "center",
       },
       logo: {
-        width: "100%",
+        width: "70%",
         height: "auto",
         flexGrow: 1,
         filter: `invert(${
@@ -68,8 +68,8 @@ function Icon({
     `perspective(25px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
   return (
-    <Box className={classes.root}>
-      <Typography align="center" variant="caption" gutterBottom>
+    <Box className={classes.root} textAlign={'center'}>
+      <Typography align="center" variant="caption" gutterBottom style={{fontSize:'14px'}}>
         {label}
       </Typography>
       <a.div
@@ -79,8 +79,8 @@ function Icon({
         className={classes.logoContainer}
       >
         <img
-          height={100}
-          width={100}
+          height={64}
+          width={64}
           ref={logoRef}
           className={classes.logo}
           src={logo}

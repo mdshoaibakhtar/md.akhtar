@@ -7,6 +7,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 
 import Icon from "../Icon";
 
+import githubDots from "public/assets/icons/aws.svg";
 import logos from "lib/logos";
 
 type iconsArray = {
@@ -40,27 +41,24 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function Skills() {
+function AWSSkills() {
   const iconsArray: iconsArray[] = useMemo(
     () => [
-      logos.javascript,
-      logos.typescript,
-      logos.nodejs,
-      logos.react,
-      logos.nextjs,
-      logos.redux,
-      logos.graphql,
-      logos.django,
-      logos.java,
-      logos.python,
-      logos.tailwind,
-      logos.materialui,
-      logos.postgresql,
-      logos.git,
-      logos.github,
-      logos.jira,
-      logos.vscode,
-      logos.confluence,
+      logos.lambda,
+      logos.apiGateway,
+      logos.appflow,
+      logos.s3,
+      logos.appsync,
+      logos.cognito,
+      logos.gluejob,
+      logos.iam,
+      logos.rds,
+      logos.pinpoint,
+      logos.secretsManager,
+      logos.sqs,
+      logos.vpc,
+      logos.dynamodb,
+      logos.ec2,
     ],
     []
   );
@@ -102,20 +100,32 @@ function Skills() {
 
   return (
     <>
-      <Toolbar id="skills" />
+      <Toolbar id="awsskills" />
       <Container component="section">
         <Grid container>
           <Box clone order={{ xs: 1, md: 2 }}>
-            <Grid xs={12} md={12} item>
+            <Grid xs={12} md={6} item className={classes.illustrationContainer}>
+              <img
+                width={996}
+                height={617}
+                src={githubDots}
+                alt="github activity illustration"
+                className={classes.illustration}
+              />
+            </Grid>
+          </Box>
+          <Box clone order={{ xs: 1, md: 2 }}>
+            <Grid xs={12} md={6} item>
               <Typography
                 className={classes.title}
                 align="center"
                 variant="h3"
                 gutterBottom
               >
-                My Tech Stack & Tools
+                AWS Services
               </Typography>
               <div
+              // ref={intersectionExitRef}
               >
                 <Grid
                   container
@@ -127,7 +137,7 @@ function Skills() {
                       key={iconsArray[index].label}
                       item
                       className={classes.gridItem}
-                      md={2}
+                      md={3}
                       xs={4}
                     >
                       <a.div
@@ -157,4 +167,4 @@ function Skills() {
   );
 }
 
-  export default Skills;
+export default AWSSkills;
