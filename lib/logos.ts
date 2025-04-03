@@ -47,6 +47,8 @@ type logoNames =
   | "secretsManager"
   | "sqs"
   | "vpc"
+  | "spark"
+  | "dynamodb"
 
 type Logos = {
   [k in logoNames]: {
@@ -258,6 +260,14 @@ const logos: Logos = {
   vpc: {
     label: "VPC",
     logo: "/assets/icons/aws/vpc.svg",
+  },
+  spark: {
+    label: "spark",
+    logo: "/assets/icons/spark.svg",
+  },
+  dynamodb: {
+    label: "dynamodb",
+    logo: "/assets/icons/aws/dynamodb.svg",
   },
 };
 

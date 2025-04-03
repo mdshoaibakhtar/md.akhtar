@@ -12,12 +12,7 @@ const projects: ProjectType[] = [
   allProjects.middlewaredev,
   allProjects.covid19,
   allProjects.swiftpaydocs,
-  // allProjects.urlShortener,
-  // allProjects.getItDone,
-  // allProjects.thisWebsite,
-  // allProjects.theMealHub,
-  // allProjects.pokemon,
-  // allProjects.jokes,
+  allProjects.datamigration,
 ];
 
 function projectsPage() {

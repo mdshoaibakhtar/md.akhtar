@@ -16,7 +16,7 @@ const projects: ProjectType[] = [
   allProjects.middlewaredev,
   allProjects.covid19,
   allProjects.swiftpaydocs,
-  // allProjects.getItDone,
+  allProjects.datamigration,
 ];
 
 const IndexPage = () => {
