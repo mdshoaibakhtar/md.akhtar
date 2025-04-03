@@ -79,8 +79,8 @@ function Icon({
         className={classes.logoContainer}
       >
         <img
-          height={100}
-          width={100}
+          height={64}
+          width={64}
           ref={logoRef}
           className={classes.logo}
           src={logo}

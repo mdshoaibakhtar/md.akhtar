@@ -7,6 +7,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 
 import Icon from "../Icon";
 
+import githubDots from "public/assets/icons/aws.svg";
 import logos from "lib/logos";
 
 type iconsArray = {
@@ -40,27 +41,22 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-function Skills() {
+function AWSSkills() {
   const iconsArray: iconsArray[] = useMemo(
     () => [
-      logos.javascript,
-      logos.typescript,
-      logos.nodejs,
-      logos.react,
-      logos.nextjs,
-      logos.postgresql,
-      logos.redux,
-      logos.graphql,
-      logos.confluence,
-      logos.git,
-      logos.github,
-      logos.django,
-      logos.java,
-      logos.jira,
-      logos.python,
-      logos.tailwind,
-      logos.vscode,
-      logos.materialui,
+      logos.lambda,
+      logos.apiGateway,
+      logos.appflow,
+      logos.s3,
+      logos.appsync,
+      logos.cognito,
+      logos.gluejob,
+      logos.iam,
+      logos.rds,
+      logos.pinpoint,
+      logos.secretsManager,
+      logos.sqs,
+      logos.vpc,
     ],
     []
   );
@@ -102,29 +98,29 @@ function Skills() {
 
   return (
     <>
-      <Toolbar id="skills" />
+      <Toolbar id="awsskills" />
       <Container component="section">
         <Grid container>
-          {/* <Box clone order={{ xs: 1, md: 2 }}>
+          <Box clone order={{ xs: 1, md: 2 }}>
             <Grid xs={12} md={6} item className={classes.illustrationContainer}>
               <img
-                width={1144}
+                width={996}
                 height={617}
                 src={githubDots}
                 alt="github activity illustration"
                 className={classes.illustration}
               />
             </Grid>
-          </Box> */}
+          </Box>
           <Box clone order={{ xs: 1, md: 2 }}>
-            <Grid xs={12} md={12} item>
+            <Grid xs={12} md={6} item>
               <Typography
                 className={classes.title}
                 align="center"
                 variant="h2"
                 gutterBottom
               >
-                My Tech Stack
+                AWS Services
               </Typography>
               <div
               // ref={intersectionExitRef}
@@ -169,4 +165,4 @@ function Skills() {
   );
 }
 
-  export default Skills;
+export default AWSSkills;
