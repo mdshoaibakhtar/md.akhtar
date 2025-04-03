@@ -57,6 +57,8 @@ function AWSSkills() {
       logos.secretsManager,
       logos.sqs,
       logos.vpc,
+      logos.dynamodb,
+      logos.ec2,
     ],
     []
   );
@@ -117,7 +119,7 @@ function AWSSkills() {
               <Typography
                 className={classes.title}
                 align="center"
-                variant="h2"
+                variant="h3"
                 gutterBottom
               >
                 AWS Services
@@ -135,8 +137,8 @@ function AWSSkills() {
                       key={iconsArray[index].label}
                       item
                       className={classes.gridItem}
-                      md={2}
-                      xs={3}
+                      md={3}
+                      xs={4}
                     >
                       <a.div
                         key={index}

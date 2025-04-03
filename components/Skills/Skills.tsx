@@ -48,19 +48,19 @@ function Skills() {
       logos.nodejs,
       logos.react,
       logos.nextjs,
-      logos.postgresql,
       logos.redux,
       logos.graphql,
-      logos.confluence,
-      logos.git,
-      logos.github,
       logos.django,
       logos.java,
-      logos.jira,
       logos.python,
       logos.tailwind,
-      logos.vscode,
       logos.materialui,
+      logos.postgresql,
+      logos.git,
+      logos.github,
+      logos.jira,
+      logos.vscode,
+      logos.confluence,
     ],
     []
   );
@@ -105,29 +105,17 @@ function Skills() {
       <Toolbar id="skills" />
       <Container component="section">
         <Grid container>
-          {/* <Box clone order={{ xs: 1, md: 2 }}>
-            <Grid xs={12} md={6} item className={classes.illustrationContainer}>
-              <img
-                width={1144}
-                height={617}
-                src={githubDots}
-                alt="github activity illustration"
-                className={classes.illustration}
-              />
-            </Grid>
-          </Box> */}
           <Box clone order={{ xs: 1, md: 2 }}>
             <Grid xs={12} md={12} item>
               <Typography
                 className={classes.title}
                 align="center"
-                variant="h2"
+                variant="h3"
                 gutterBottom
               >
-                My Tech Stack
+                My Tech Stack & Tools
               </Typography>
               <div
-              // ref={intersectionExitRef}
               >
                 <Grid
                   container
@@ -140,7 +128,7 @@ function Skills() {
                       item
                       className={classes.gridItem}
                       md={2}
-                      xs={3}
+                      xs={4}
                     >
                       <a.div
                         key={index}
