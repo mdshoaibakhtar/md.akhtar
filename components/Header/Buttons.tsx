@@ -108,7 +108,7 @@ function Buttons() {
           variant="outlined"
           color="secondary"
             className={classes.bigButton}
-          onClick={() => openPDFInNewTab("https://drive.google.com/drive/folders/1kgdsDVOJai5s3AygRnNPgTEAeMrR2ZGx")}
+          onClick={() => openPDFInNewTab("https://drive.google.com/file/d/1X9NLLO9d59bNQygsY_eRLkwhlQrnausa/view")}
           startIcon={<CodeIcon />}
           >
             My Resume
