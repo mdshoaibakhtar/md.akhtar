@@ -53,7 +53,7 @@ function HeaderText() {
         component="h2"
         gutterBottom
       >
-        A fullstack developer
+        A Software developer
       </Typography>
       <Typography itemProp="knowsAbout" className={classes.paragraph}>
         {/* I specialize in developing and deploying responsive websites and web
