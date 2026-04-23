@@ -50,6 +50,9 @@ type logoNames =
   | "spark"
   | "dynamodb"
   | "ec2"
+  | "reactnative"
+  | "gluestack"
+  | "springboot"
 
 type Logos = {
   [k in logoNames]: {
@@ -67,6 +70,18 @@ const logos: Logos = {
     spin: false,
     invert: true,
   },
+  springboot: {
+    label: "Springboot",
+    logo: "/assets/icons/springboot.svg",
+    spin: false,
+    invert: true,
+  },
+  gluestack: {
+    label: "Gluestack",
+    logo: "/assets/icons/gluestack.svg",
+    spin: false,
+    invert: true,
+  },
   graphql: {
     label: "GraphQl",
     logo: "/assets/icons/graphql.svg",
@@ -79,6 +94,11 @@ const logos: Logos = {
   },
   react: {
     label: "React",
+    logo: "/assets/icons/react.png",
+    spin: true,
+  },
+  reactnative: {
+    label: "React Native",
     logo: "/assets/icons/react.png",
     spin: true,
   },

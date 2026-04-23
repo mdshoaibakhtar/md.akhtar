@@ -9,6 +9,7 @@ import allProjects, { ProjectType } from "lib/projects";
 
 const projects: ProjectType[] = [
   allProjects.jobdotjs,
+  allProjects.websolution,
   allProjects.middlewaredev,
   allProjects.covid19,
   allProjects.swiftpaydocs,

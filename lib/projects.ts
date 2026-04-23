@@ -2,6 +2,7 @@ import logos from "./logos";
 
 type ProjectName =
   | "jobdotjs"
+  | "websolution"
   | "middlewaredev"
   | "covid19"
   | "swiftpaydocs"
@@ -55,6 +56,31 @@ const projects: Projects = {
     links: {
       live: "https://jobdotjs.vercel.app",
       github: "https://github.com/mdshoaibakhtar/Job.js",
+    },
+  },
+  websolution: {
+    title: "Web Solution",
+    description: [
+      "Built a **Web Solutions platform** to help shop owners, startups, and small businesses create and manage their online presence with ease.",
+      "Designed **affordable website packages (starting at ₹14,999)** with a focus on **responsive design**, **performance**, and **user-friendly management** for non-technical users.",
+      "Implemented a **scalable and intuitive UI portal** that simplifies website creation, enabling businesses to quickly launch and grow online.",
+    ],
+    images: {
+      main: {
+        link: "/project/websolution/websolution.png",
+        width: 1182,
+        height: 732,
+      },
+    },
+    stack: [
+      logos.react,
+      logos.tailwind,
+      logos.materialui,
+      logos.typescript,
+    ],
+    links: {
+      live: "https://webs-solution.vercel.app/",
+      github: "https://github.com/mdshoaibakhtar/Web-Solutions",
     },
   },
 

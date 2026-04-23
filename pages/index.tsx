@@ -14,6 +14,7 @@ import AWSSkills from "components/AWS Skills/AWSSkills";
 
 const projects: ProjectType[] = [
   allProjects.jobdotjs,
+  allProjects.websolution,
   allProjects.middlewaredev,
   allProjects.covid19,
   allProjects.swiftpaydocs,

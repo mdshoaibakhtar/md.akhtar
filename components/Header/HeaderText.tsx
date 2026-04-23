@@ -53,18 +53,10 @@ function HeaderText() {
         component="h2"
         gutterBottom
       >
-        A Software developer
+        A Software developer 
       </Typography>
       <Typography itemProp="knowsAbout" className={classes.paragraph}>
-        {/* I specialize in developing and deploying responsive websites and web
-        applications */}
-        I enjoy solving complex problems.{" "}
-        {/* I provide sustainable and scalable solutions.{" "} */}
-        {/* Nothing brings me more excitement and motivation than
-        building something out of nothing. */}
-        Frequently praised as detail-oriented by my peers, I can be relied upon
-        to help your company achieve its goals by providing sustainable and
-        scalable solutions.
+        with 3+ years of experience building scalable and efficient applications. I enjoy solving complex problems and turning ideas into reliable products. Known for my attention to detail, I focus on writing clean, maintainable code that helps businesses grow.
       </Typography>
       <Buttons />
     </Box>
