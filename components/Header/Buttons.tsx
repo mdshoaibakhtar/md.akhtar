@@ -6,6 +6,7 @@ import ForumIcon from "@material-ui/icons/Forum";
 import CodeIcon from "@material-ui/icons/CloudDownloadRounded";
 import { Box, IconButton, Link, Button } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
+import { Mail } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -87,6 +88,21 @@ function Buttons() {
             <TwitterIcon fontSize="large" />
           </IconButton>
         </Link>
+        <Link
+          href="mailto:imdshoaibakhtar@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          color="inherit"
+          itemProp="sameAs"
+        >
+          <IconButton
+            aria-label="Github repository link"
+            aria-haspopup="true"
+            color="inherit"
+          >
+            <Mail fontSize="large" />
+          </IconButton>
+        </Link>
       </Box>
       <Box className={classes.bigButtonsContainer} mt={2}>
         <Button
@@ -108,7 +124,7 @@ function Buttons() {
           variant="outlined"
           color="secondary"
             className={classes.bigButton}
-          onClick={() => openPDFInNewTab("https://drive.google.com/file/d/169C7yIuw7ZcXQ_qx7XWG1NLT3lDqAV0R/view?usp=drive_link")}
+          onClick={() => openPDFInNewTab("https://drive.google.com/file/d/1jdMDVpNAhcXMydZ7A4yqA0RNNvLMeXQU/view?usp=drive_link")}
           startIcon={<CodeIcon />}
           >
             My Resume
